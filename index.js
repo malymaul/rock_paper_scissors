@@ -12,25 +12,25 @@ let randomChoice = choiceArr => {
 // Function: Plays a single round of Game
 let round = (playerSelection, computerSelection) => {
     if (playerSelection === 'rock' && computerSelection === 'rock') {
-        console.log(`It's a tie 🎀`);
+        return `Tie 🎀! Player: ${playerSelection}. CPU: ${computerSelection}`;
     } else  if (playerSelection === 'paper' && computerSelection === 'paper') {
-        console.log(`It's a tie 🎀`);
+        return `Tie 🎀! Player: ${playerSelection}. CPU: ${computerSelection}`;
     } else  if (playerSelection === 'scissors' && computerSelection === 'scissors') {
-        console.log(`It's a tie 🎀`);
+        return `Tie 🎀! Player: ${playerSelection}. CPU: ${computerSelection}`;
     } else if (playerSelection === 'rock' && computerSelection === 'scissors') {
-        console.log(`Player wins 🎉`);
+        return `Player wins 🎉 Player: ${playerSelection}. CPU: ${computerSelection}`;
     } else if (playerSelection === 'scissors' && computerSelection === 'rock') {
-        console.log(`CPU wins 🎉`);
+        return `CPU wins 🎉 Player: ${playerSelection}. CPU: ${computerSelection}`;
     } else if (playerSelection === 'paper' && computerSelection === 'rock') {
-        console.log(`Player wins 🎉`);
+        return `Player wins 🎉 Player: ${playerSelection}. CPU: ${computerSelection}`;
     } else if (playerSelection === 'rock' && computerSelection === 'paper') {
-        console.log(`CPU wins 🎉`);
+        return `CPU wins 🎉 Player: ${playerSelection}. CPU: ${computerSelection}`;
     } else if (playerSelection === 'scissors' && computerSelection === 'paper') {
-        console.log(`Player wins 🎉`);
+        return `Player wins 🎉 Player: ${playerSelection}. CPU: ${computerSelection}`;
     } else if (playerSelection === 'paper' && computerSelection === 'scissors') {
-        console.log(`Player wins 🎉`);
+        return `Player wins 🎉 Player: ${playerSelection}. CPU: ${computerSelection}`;
     } else {
-        console.log('🚨 Please select Rock, Paper, or Scissors 🚨')
+        return '🚨 Please select Rock, Paper, or Scissors 🚨';
     }
 };
 
