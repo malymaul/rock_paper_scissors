@@ -13,13 +13,9 @@ let randomChoice = choiceArr => {
 
 // Function: Plays a single round of Game
 let round = (playerSelection, computerSelection) => {
-    if (playerSelection === 'rock' && computerSelection === 'rock') {
+    if (playerSelection === computerSelection || computerSelection === playerSelection) {
         return `Player: ${playerSelection}. CPU: ${computerSelection}`;
-    } else  if (playerSelection === 'paper' && computerSelection === 'paper') {
-        return `Player: ${playerSelection}. CPU: ${computerSelection}`;
-    } else  if (playerSelection === 'scissors' && computerSelection === 'scissors') {
-        return `Player: ${playerSelection}. CPU: ${computerSelection}`;
-    } else if (playerSelection === 'rock' && computerSelection === 'scissors') {
+    }  else if (playerSelection === 'rock' && computerSelection === 'scissors') {
         userScore++
         return `Player: ${playerSelection}. CPU: ${computerSelection}`;
     } else if (playerSelection === 'scissors' && computerSelection === 'rock') {
